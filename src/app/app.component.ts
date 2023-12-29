@@ -10,21 +10,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Assignment7-2';
-  public Name: string ="Educating For Better tomorrow";
+  title = 'Assignment7-4';
+  public Name: string ='';
 
-  displayText: string = 'Marvellous Infosystems';
 
-  toggleText() {
-    this.displayText = (this.displayText === 'Marvellous Infosystems') ? 'Educating for Better tomorrow' : 'Marvellous Infosystems';
-  }
+  public upperButton(){
+    this.Name='MARVELLOUS INFOSYSTEM';
 
   }
 
-/*
-  public Fun()
-   {
-        return "Marvellous Inforsystems";
-   }
-
-*/
+  public lowerButton(){
+    this.Name='marvellous infosystem';
+  }
+}
