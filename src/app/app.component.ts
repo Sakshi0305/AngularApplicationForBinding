@@ -11,9 +11,20 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Assignment7-2';
+  public Name: string ="Educating For Better tomorrow";
 
+  displayText: string = 'Marvellous Infosystems';
+
+  toggleText() {
+    this.displayText = (this.displayText === 'Marvellous Infosystems') ? 'Educating for Better tomorrow' : 'Marvellous Infosystems';
+  }
+
+  }
+
+/*
   public Fun()
    {
         return "Marvellous Inforsystems";
    }
-}
+
+*/
